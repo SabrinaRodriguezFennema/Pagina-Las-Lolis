@@ -1,28 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    font-family: "Agdasima", serif;
+    font-family: "Playfair Display", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-h1 {
-    font-size: 3em;
-    color: black;
-    text-align: center;
-
-}
-
-h2 {
-    font-size: 2.5em;
-    color: black;
-}
-
-h3 {
-    font-size: 2em;
-    color: black;
+.imagenGeneral {
+    background-image: url(../assets/img/Diseño\ sin\ título.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 ul {
@@ -39,42 +29,41 @@ a {
     color: black;
 }
 
+
 .header {
-    background-color: rgb(255, 255, 255);
-    font-size: 10px;
+    background-image: url(../assets/img/Diseño\ sin\ título.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 8px;
     position: sticky;
     top: 0;
     z-index: 1000;
     display: flex;
     gap: 15px;
     align-items: start;
+
     .logo {
         width: 80px;
     }
+
     .navHeader {
         .ulHeader {
+            display: flex;
+
             .listaItem {
-                display: inline-block;
                 margin-right: 15px;
                 margin-top: 30px;
             }
-            
+
         }
     }
 }
 
 .footer {
-    font-size: 10px;
-
-    .logo {
-        width: 100px;
-    }
-
-    p {
-        font-size: 0.8rem;
-        color: white;
-        margin-top: 3px;
-    }
+    background-color: rgba(255, 255, 255, 0.445);
+    font-size: 6px;
 
     .fa-whatsapp {
         font-size: 2em;
@@ -83,6 +72,11 @@ a {
         bottom: 20px;
         right: 20px;
 
+    }
+
+
+    .logo {
+        width: 100px;
     }
 
     .fa-square-facebook {
@@ -97,162 +91,192 @@ a {
         color: cornflowerblue;
     }
 
-    background-color: rgb(0, 0, 0);
-    font-size: 10px;
+    h3 {
+        font-size: 12px;
+    }
 
-    .navFooter {
-        .ulFooter {
-            .listaItem {
-                display: inline-block;
-                margin-right: 15px;
-                margin-top: 3px;
+    .contenedorFooter {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
+        flex-wrap: wrap;
 
-                a {
-                    color: white;
-                }
-            }
+        p {
+            font-size: 2em;
         }
+    }
+
+    .item {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        column-gap: 100px;
+        flex-wrap: wrap;
+    }
+
+    .subitem {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .ulFooter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .suscribite {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .boton {
+            background-color: black;
+            color: white;
+            padding: 2px 5px;
+            height: 20px;
+            font-size: 10px;
+        }
+
+        .box {
+            text-align: left;
+            width: 180px;
+            height: 20px;
+            font-size: 10px;
+        }
+    }
+
+    .derechosReservados {
+        padding: 8px;
+        font-size: 2em;
     }
 }
 
-
+.tituloIndex {
+    text-align: center;
+    font-size: 2em;
+}
 
 /*Estilos seccion principal del index*/
-.principalIndex {
-    padding: 30px;
-    background-image: url(../assets/img/Estidiolaslolis.jpg);
+.indexImagen {
+    padding: 10px;
+    background-image: url(../assets/img/principalInicio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
-    height: 100vh;
-    text-align: center;
+    background-position: top center;
+    height: 50vh;
 
-    .contenedorTextoPrincipal {
-        margin: 0 auto;
-        margin-top: 30px;
-        border: 2px solid black;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        color: black;
-        border-radius: 5;
-        width: 50%;
-        backdrop-filter: blur(15px);
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        p,
-        a {
-            font-size: 1.5rem;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 5px;
-            box-shadow: -12px 11px 24px 4px rgba(0, 0, 0, 0.49);
-            -webkit-box-shadow: -12px 11px 24px 4px rgba(0, 0, 0, 0.49);
-            -moz-box-shadow: -12px 11px 24px 4px rgba(0, 0, 0, 0.49);
-        }
-    }
 }
 
 .combosIndex {
-    padding: 30px;
+    margin-top: 50px;
     align-items: center;
     text-align: center;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3,
+    h4 {
+        font-size: 1em;
+        color: black;
+    }
+
+    a {
+        margin-top: 20px;
+        font-size: 1em;
+        color: black;
+    }
 
     .contenedor {
-        margin: 0 auto;
         padding: 20px;
+        margin: 0 auto;
+        width: 90%;
         display: flex;
-        align-items: start;
-        justify-content: space-evenly;
-        margin-top: 20px;
-        gap: 100px;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        row-gap: 50px;
 
-        /* Espacio entre los divs */
-        .box {
-            padding: 20px;
-            margin: 0 auto;
-            border: 1px solid black;
-            border-radius: 5px;
-            padding: 20px;
-            width: 500px;
+    }
+
+    .flex-item {
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        width: 450px;
+        height: 320px;
+        background-color: rgba(255, 255, 255, 0.445);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+
+        img {
+            margin-top: 20px;
+            width: 200px;
             /* Ancho del contenedor */
-            height: 520px;
-            /* Espacio interno */
-            img {
-                margin-top: 20px;
-                width: 300px;
-                /* Ancho del contenedor */
-                height: 300px;
-                /* Alto del contenedor */
-                border-radius: 5px;
-            }
-            h3{
-                margin-top: 20px;
-                font-size: 2em;
-                color: black;
-            }
-            h4,a{
-                margin-top: 20px;
-                font-size: 1.5em;
-                color: black;
-            }
-            a{
-                font-size: 1em;
-            }
+            height: 200px;
+            /* Alto del contenedor */
+            border-radius: 5px;
         }
+
     }
 }
 
-.imagenPestañas {
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
 
-}
-
-.conocenosIndex {
-    height: 85vh;
+.reseñas {
+    margin-top: 50px;
     text-align: center;
-    color: black;
-    backdrop-filter: blur(15px);
 
-    p {
-        font-size: 1.5rem;
+    .reseñasIndex {
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: center;
+
+        .reseñasClientas {
+
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            row-gap: 50px;
+
+            p {
+                background-color: #f4f4f463;
+                width: 300px;
+            }
+
+        }
+
+        img {
+            border-radius: 200px;
+            width: 300px;
+            height: 300px;
+        }
+
     }
 
+    h2 {
+        font-size: 2em;
+    }
+    .fa-arrow-up{
+        font-size: 20px;
+        color: black;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
 }
 
-.reseñasIndex {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    /* Espacio entre cada par imagen-parrafo */
-}
-
-.item {
-    display: flex;
-    align-items: center;
-    /* Alinea verticalmente el texto e imagen */
-    gap: 20px;
-    /* Espacio entre la imagen y el texto */
-}
-
-img {
-    width: 300px;
-    /* Ajusta el tamaño de la imagen */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-}
 
 .highlight {
     font-size: 1.5em;
@@ -263,28 +287,136 @@ img {
 
 /*Estilos Capacitacion*/
 .principalCapacitacion {
-    background-image: url(../assets/img/capacitacion.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    height: 85vh;
+
     font-size: 10px;
-    color: black;
 
-    .contenedorTextoPrincipal {
-        float: right;
-        width: 50%;
-        color: black;
-        backdrop-filter: blur(15px);
+    .tituloCapacitacion {
+        margin-left: 10px;
+        font-size: 3em;
+        padding-top: 20px;
+        text-align: center;
 
-        ul {
-            font-size: 1.2rem;
+
+    }
+
+    .box {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .curso {
+            background-color: rgba(255, 255, 255, 0.445);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 350px;
+            height: 350px;
+
+            h3,
+            h4 {
+                margin-top: 10px;
+                font-size: 2em;
+            }
+
+            a {
+                margin-top: 20px;
+                font-size: 1em;
+                color: black;
+            }
+
+            img {
+                margin-top: 20px;
+                width: 200px;
+                height: 200px;
+                border-radius: 5px;
+            }
         }
+
+        .contenedorTextoPrincipal {
+            width: 350px;
+            height: 350px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.445);
+
+            ul {
+                width: 600px;
+                margin-top: 10px;
+                font-size: 1.5em;
+                color: black;
+                padding-left: 10px;
+            }
+
+
+        }
+
+    }
+    .fa-arrow-up{
+        font-size: 20px;
+        color: black;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
     }
 
 
 }
 
+.principalServicios {
+    text-align: center;
+
+    .contenedorServicios {
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 50px;
+        justify-content: space-around;
+
+        .itemServicios {
+            background-color: rgba(255, 255, 255, 0.445);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 350px;
+            /* Ancho del contenedor */
+            height: 350px;
+
+            h3,
+            h4 {
+                margin-top: 10px;
+                font-size: 1em;
+            }
+
+            a {
+                margin-top: 20px;
+                font-size: 1em;
+                color: black;
+            }
+
+            /* Espacio interno */
+            img {
+                margin-top: 20px;
+                width: 200px;
+                /* Ancho del contenedor */
+                height: 200px;
+                /* Alto del contenedor */
+                border-radius: 5px;
+            }
+        }
+    }
+    .fa-arrow-up{
+        font-size: 20px;
+        color: black;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+
+}
 
 /* Estilos carrito */
 .principalCarrito {
@@ -293,15 +425,11 @@ img {
     padding: 50px;
 }
 
-/* Estilos específicos para la página de servicios */
-.principalServicios {
-    font-size: 30px;
-}
 
 /* Estilos específicos para la página de contacto */
 /*Estilo Principal Contacto*/
 .principalContactos {
-    font-size: 10px;
+    font-size: 1em;
     color: black;
     padding: 30px;
     align-items: center;
@@ -310,23 +438,319 @@ img {
     .contenedor {
         margin-top: 20px;
         display: flex;
-        /* Activa el modo flexbox */
         gap: 20px;
         font-size: 1.3rem;
         text-align: left;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 10px;
 
-        /* Espacio entre los divs */
         .boxContacto {
             padding: 20px;
             margin: 0 auto;
+        }
+    }
+
+    .principalFormulario {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 10px;
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+
+    .items {
+        border: 0;
+        outline: none;
+        width: 300px;
+        height: 30px;
+        margin-top: 5px;
+        border: solid 1px black;
+        border-radius: 5px;
+        text-align: left;
+        background-color: #f4f4f47a;
+
+
+    }
+
+    .itemMensaje {
+        border: 0;
+        outline: none;
+        width: 300px;
+        height: 100px;
+        margin-top: 5px;
+        border: solid 1px black;
+        border-radius: 5px;
+        text-align: left;
+        background-color: #f4f4f47a;
+    }
+
+    .boton {
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+        width: 300px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .contacto {
+        margin-bottom: 15px;
+        font-size: 0.8em;
+    }
+    .fa-arrow-up{
+        font-size: 20px;
+        color: black;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .header {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        gap: 0px;
+
+        .navHeader {
+            .ulHeader {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .listaItem {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+
+    .indexImagen {
+        padding: 10px;
+        background-image: url(../assets/img/principalIniciocel.jpg);
+        background-repeat: no-repeat;
+        height: 100px;
+
+    }
+
+    .footer {
+        .contenedorFooter {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            row-gap: 5px;
+
+            p {
+                font-size: 2em;
+            }
 
         }
 
-        .principalFormulario {
-            width: 400px;
-            padding: 20px;
-            border: 1px solid black;
-            border-radius: 5px;
+        .subitem {
+            margin-top: 5px;
         }
+
+        .derechosReservados {
+            text-align: center;
+        }
+    }
+
+    .tituloIndex {
+        margin-top: 30px;
+        font-size: 1em;
+    }
+
+    .combosIndex {
+        .flex-item {
+            width: 250px;
+            height: 280px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        h3,
+        h4 {
+            font-size: 0.8em;
+        }
+    }
+
+    .reseñas {
+        h2 {
+            font-size: 1em;
+        }
+
+        .reseñasIndex {
+            row-gap: 20px;
+
+            img {
+                width: 200px;
+                height: 200px;
+
+            }
+
+            .reseñasClientas {
+                row-gap: 5px;
+
+                p {
+                    max-width: 80%;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+    .principalCapacitacion {
+        margin-top: 10px;
+        font-size: 6px;
+
+        .tituloCapacitacion {
+            font-size: 2.5em;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+
+            .contenedorTextoPrincipal {
+                width: 250px;
+                height: 220px;
+                margin-bottom: 10px;
+
+                .lista {
+                    width: 100%;
+                }
+            }
+
+            .curso {
+                padding: 5px;
+                width: 250px;
+                height: 250px;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                h3,
+                h4 {
+                    font-size: 2em;
+                }
+            }
+        }
+
+
+    }
+
+    .principalServicios {
+        h1 {
+            margin-top: 30px;
+            font-size: 1em;
+        }
+
+        .contenedorServicios {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            align-items: center;
+
+            .itemServicios {
+                width: 250px;
+                height: 280px;
+
+                h2 {
+                    font-size: 1em;
+                }
+
+                h3,
+                h4 {
+                    font-size: 0.8em;
+                }
+
+                img {
+                    margin-top: 20px;
+                    width: 150px;
+                    height: 150px;
+                }
+
+            }
+
+
+        }
+    }
+
+    .principalContactos {
+        font-size: 8px;
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 10px;
+
+            .boxContacto {
+                padding: 0;
+                .contacto {
+                    font-size: 0.6em;
+                }
+                .mapa {
+                    width: 230px;
+                    height: 100px;
+                }
+                .principalFormulario {
+                    font-size: 0.8em;
+                    .box{
+                    
+                        font-size: 0.8em;
+                        .items {
+                            width: 200px;
+                            height: 20px;
+                            border: solid 0.5px black;
+                            
+                        }
+                        .itemMensaje{
+                            width: 200px;
+                            height: 50px;
+                            border: solid 0.5px black;
+                        }
+                        
+                    }
+                    .boton {
+                        width: 200px;
+                        height: 20px;
+                    }
+
+                
+                
+                    
+                    
+                }
+                
+            }
+
+        }
+
     }
 }

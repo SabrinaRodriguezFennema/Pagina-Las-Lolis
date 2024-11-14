@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto | Las Lolis </title>
+    <title> CONTACTO | LAS LOLIS </title>
     <script src="https://kit.fontawesome.com/5b5fd91fb8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,106 +14,130 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="imagenGeneral">
     <header class="header">
         <a href="../index.html">
             <img class="logo" src="../assets/img/logoLasLolisSinFondo.png" alt="Logo de Las Lolis">
         </a>
         <nav class="navHeader">
             <ul class="ulHeader">
-                <li class="listaItem"><a href="../index.html">Inicio</a></li>
-                <li class="listaItem"><a href="./servicios.html">Servicios</a></li>
-                <li class="listaItem"><a href="./capacitacion.html">Capacitacion</a></li>
-                <li class="listaItem"><a href="./contacto.html">Contacto</a></li>
+                <li class="listaItem"><a href="../index.html">INICIO</a></li>
+                <li class="listaItem"><a href="./servicios.html">SERVICIO</a></li>
+                <li class="listaItem"><a href="./capacitacion.html">CAPACITACIÓN</a></li>
+                <li class="listaItem"><a href="./contacto.html">CONTACTO</a></li>
                 <li class="listaItem"><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <main class="principalContactos">
-        <h1>Contactanos </h1>
+        <h1 class="tituloContacto">CONTACTANOS </h1>
         <div class="contenedor">
 
             <div class="boxContacto">
                 <ul>
-                    <li><i class="fa-solid fa-phone"></i> Teléfono: (+54) 11 6919-6340</li>
-                    <li><i class="fa-solid fa-envelope"></i> Correo electrónico: LasLolis@gmail.com</li>
-                    <li><i class="fa-solid fa-bell"></i> Horarios de Atencion: 8 a 18 hs </li>
-                    <li><i class="fa-solid fa-location-dot"></i> Dirección: Lafuente 2873, Sarandí, Buenos Aires. </li>
+                    <li class="contacto"><i class="fa-solid fa-phone"></i> Teléfono: (+54) 11 6919-6340</li>
+                    <li class="contacto"><i class="fa-solid fa-envelope"></i> Correo electrónico: LasLolis@gmail.com</li>
+                    <li class="contacto"><i class="fa-solid fa-bell"></i> Horarios de Atencion: 8 a 18 hs </li>
+                    <li class="contacto"><i class="fa-solid fa-location-dot"></i> Dirección: Lafuente 2873, Sarandí, Buenos Aires. </li>
 
                 </ul>
+
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.595259389122!2d-58.358413399999996!3d-34.6901632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33327894de04f%3A0xbee5d3142db13d9b!2sTte.%20Coronel%20Lafuente%202873%2C%20B1872EYK%20Sarand%C3%AD%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1727882096779!5m2!1ses-419!2sar"
+                    width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="boxContacto">
                 <form class="principalFormulario">
-                    <div>
-                        <label for="nombre">
-                            <input type="text" placeholder="Nombre" required name="nombre" id="nombre">
-                        </label>
+                    <div class="box">
+                        <label for="nombre"> Nombre</label>
+                        <input type="text" required name="nombre" id="nombre" class="items">
+                    </div>
+                    <div class="box">
+                        <label for="email"> Email</label>
+                        <input type="email"  required name="email" id="email" class="items">
+                    </div>
+                    <div class="box">
+                        <label for="numero"> Telefono</label>
+                        <input type="number"  required name="telefono" id="telefono" class="items">
+                    </div>
+                    <div class="box">
+                        <label for="mensaje"> Ingrese su mensaje</label>
+                        <textarea name="mensaje" id="Mensaje"  class="itemMensaje"></textarea>
+                        
                     </div>
                     <div>
-                        <label for="email">
-                            <input type="email" placeholder="Email" required name="email" id="email">
-                        </label>
-                    </div>
-                    <div>
-                        <label for="numero">
-                            <input type="number" placeholder="Telefono" required name="telefono" id="telefono">
-                        </label>
-                    </div>
-                    <div>
-                        <label for="mensaje">
-                            <textarea name="mensaje" id="Mensaje" placeholder="Ingrese su Mensaje"></textarea>
-                        </label>
-                    </div>
-                    <div>
-                        <input type="button" value="Enviar">
+                        <input type="button" value="Enviar" class="boton">
                     </div>
                 </form>
             </div>
 
-            <div class="boxContacto">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.595259389122!2d-58.358413399999996!3d-34.6901632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33327894de04f%3A0xbee5d3142db13d9b!2sTte.%20Coronel%20Lafuente%202873%2C%20B1872EYK%20Sarand%C3%AD%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1727882096779!5m2!1ses-419!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
+
+
         </div>
+        <a href="./contacto.html"> <i class="fa-solid fa-arrow-up"></i> </a>
+        
     </main>
     <footer class="footer">
+        <div class="contenedorFooter">
+            <div class="item">
+                <a href="a">
+                    <img class="logo" src="../assets/img/logoLasLolisSinFondo.png" alt="Logo de Las Lolis">
+                </a>
+            </div>
+            <div class="item">
+                <nav class="subitem">
+                    <h3>IMPORTANTE</h3>
+                    <ul>
+                        <li class="listaItem"><a href="">Sobre Nosotros</a></li>
+                        <li class="listaItem"><a href="">Políticas</a></li>
+                        <li class="listaItem"><a href="">Términos y Condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <nav class="navFooter">
-            <ul class="ulFooter">
-                <li class="listaItem"><a href="">Sobre Nosotros</a></li>
-                <li class="listaItem"><a href="">Políticas</a></li>
-                <li class="listaItem"><a href="">Términos y Condiciones</a></li>
-            </ul>
-        </nav>
-        <nav class="navFooter">
-            <ul class="ulFooter">
-                <li class="listaItem"><a href="https://www.instagram.com/laslolis.lifting?igsh=MWd3Z3F3MHZkNGVyaw== ">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a></li>
-                <li class="listaItem"><a href="https://web.facebook.com/">
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a></li>
-                <li class="listaItem">
-                    <a href="https://x.com/?lang=es">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <form action="">
-                <input type="email" placeholder="Ingresa tu correo electrónico" id="emailSusc" name="emailSusc">
-                <input type="submit" value="Suscribirse">
-            </form>
+            <div class="item">
+                <div class="subitem">
+                    <h3>ENCONTRANOS</h3>
+                    <address>
+                        <p>Dirección: Lafuente 2873, Sarandí, Buenos Aires.</p>
+                        <p>Teléfono: (+54) 11 6919-6340</p>
+                        <p>Correo electrónico: LasLolis@gmail.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="item">
+                <div class="subitem">
+                    <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
+                    <form action="" class="suscribite">
+                        <input type="email" placeholder="Ingresa tu correo electrónico" id="emailSusc" name="emailSusc" class="box">
+                        <input type="submit" value="Suscribirse" class="boton">
+                    </form>
+
+                    <nav>
+                        <ul class="ulFooter">
+                            <li><a href="https://www.instagram.com/laslolis.lifting?igsh=MWd3Z3F3MHZkNGVyaw== ">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a></li>
+                            <li><a href="https://web.facebook.com/">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a></li>
+                            <li>
+                                <a href="https://x.com/?lang=es">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <a href="https://walink.co/a655c9 " target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
         </div>
-        <address>
-            <p>Dirección: Lafuente 2873, Sarandí, Buenos Aires.</p>
-            <p>Teléfono: (+54) 11 6919-6340</p>
-            <p>Correo electrónico: LasLolis@gmail.com</p>
-        </address>
-        <a href="https://walink.co/a655c9 " target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
         <p>2024 LasLolis | Todos los derechos reservados </p>
     </footer>
 </body>
