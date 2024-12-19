@@ -37,21 +37,21 @@
                     <h2>LIFTING DE PESTAÑAS</h2>
                     <div>
                         <img src="../assets/img/lifting2.png" alt="lifting1">
-                        <h4>$9000.00 <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a> </h4>
+                        <h4>$9000.00 <a href="#" id="Lifting" data-nombre="Lifting" data-precio="9000.00" class="botonAgregar"><i class="fa-solid fa-cart-shopping"></i></a> </h4>
                     </div>
                 </section>
                 <section class="itemServicios">
                     <h2>LAMINADO DE CEJAS</h2>
                     <div>
                         <img src="../assets/img/laminado2.png" alt="laminado2">
-                        <h4>$9000.00 <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></h4>
+                        <h4>$9000.00 <a href="#" id="Laminado" data-nombre="Laminado" data-precio="9000.00" class="botonAgregar"><i class="fa-solid fa-cart-shopping"></i></a></h4>
                     </div>
                 </section>
                 <section class="itemServicios">
                     <h2>PERFILADO DE CEJAS</h2>
                     <div>
                         <img src="../assets/img/liftingperfilado.jpg" alt="laminado2">
-                        <h4>$6000.00 <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></h4>
+                        <h4>$6000.00 <a href="#" id="Perfilado" data-nombre="Perfilado" data-precio="6000.00" class="botonAgregar"><i class="fa-solid fa-cart-shopping"></i></a></h4>
                     </div>
                 </section>
                 <section class="itemServicios">
@@ -59,7 +59,7 @@
                     <div>
                         <img src="../assets/img/giftcard.jpg" alt="gifcard">
                         <h3>LIFTING DE PESTAÑAS</h3>
-                        <h4>$15000.00 <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></h4>
+                        <h4>$15000.00 <a href="#" id="Gifcard1" data-nombre="Gifcard1" data-precio="15000.00" class="botonAgregar"><i class="fa-solid fa-cart-shopping"></i></a></h4>
                     </div>
                 </section>
                 <section class="itemServicios">
@@ -67,7 +67,7 @@
                     <div>
                         <img src="../assets/img/giftcard.jpg" alt="gifcard">
                         <h3>LAMINADO DE CEJAS</h3>
-                        <h4>$15000.00 <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></h4>
+                        <h4>$15000.00 <a href="#" id="Gifcard2" data-nombre="Gifcard2" data-precio="15000.00" class="botonAgregar"><i class="fa-solid fa-cart-shopping"></i></a></h4>
                     </div>
                 </section>
                 <section class="itemServicios">
@@ -75,11 +75,13 @@
                     <div>
                         <img src="../assets/img/giftcard.jpg" alt="gifcard">
                         <h3>COMPLETO</h3>
-                        <h4>$15000.00 <a href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></h4>
+                        <h4>$15000.00 <a href="#" id="Gifcard3" data-nombre="Gifcard3" data-precio="15000.00" class="botonAgregar"><i class= "fa-solid fa-cart-shopping"></i></a></h4>
                     </div>
                 </section>
             </div>
-            <a href="../pages/servicios.html"> <i class="fa-solid fa-arrow-up"></i> </a>
+            <div class="flecha">
+                <i class="fa-solid fa-angles-up d-none" id="botonSubir"></i>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -113,7 +115,7 @@
             <div class="item">
                 <div class="subitem">
                     <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
-                    <form action="" class="suscribite">
+                    <form action="" class="suscribite" id="formSuscribite">
                         <input type="email" placeholder="Ingresa tu correo electrónico" id="emailSusc" name="emailSusc" class="box">
                         <input type="submit" value="Suscribirse" class="boton">
                     </form>
@@ -142,6 +144,9 @@
         </div>
         <p class="derechosReservados">2024 LasLolis | Todos los derechos reservados </p>
     </footer>
+    <script src="../js/agregarcarrito.js"></script>
+    <script src="../js/botonarriba.js"></script>
+    <script src="../js/validacionmailsuscribir.js"></script>
 </body>
 
 </html>

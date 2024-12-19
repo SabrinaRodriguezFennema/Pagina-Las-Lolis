@@ -7,6 +7,19 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100vh;
+    body {
+        height: 100vh;
+        display: flex; 
+        flex-direction: column;
+        main {
+            flex:1;
+        }
+    }
+
+}
+
 .imagenGeneral {
     background-image: url(../assets/img/Diseño\ sin\ título.png);
     background-repeat: no-repeat;
@@ -61,11 +74,21 @@ a {
         }
     }
 }
+.fa-angles-up{
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.836);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+
+
 
 .footer {
     background-color: rgba(255, 255, 255, 0.445);
     font-size: 6px;
-
     .fa-whatsapp {
         font-size: 2em;
         color: rgb(44, 181, 44);
@@ -271,13 +294,7 @@ a {
     h2 {
         font-size: 2em;
     }
-    .fa-arrow-up{
-        font-size: 20px;
-        color: black;
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-    }
+   
 }
 
 
@@ -354,13 +371,7 @@ a {
         }
 
     }
-    .fa-arrow-up{
-        font-size: 20px;
-        color: black;
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-    }
+
 
 
 }
@@ -410,21 +421,36 @@ a {
             }
         }
     }
-    .fa-arrow-up{
-        font-size: 20px;
-        color: black;
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-    }
+
 
 }
 
 /* Estilos carrito */
 .principalCarrito {
-    background-color: #f4f4f4;
     text-align: center;
     padding: 50px;
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .tablaProductos{
+            width: 70%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.445);
+            .trtitulo{
+                text-align: center;
+                background-color: #afadadb6;
+            }
+            th {
+                color: black;
+            }
+        }
+        .total{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 }
 
 
@@ -507,13 +533,7 @@ a {
         margin-bottom: 15px;
         font-size: 0.8em;
     }
-    .fa-arrow-up{
-        font-size: 20px;
-        color: black;
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-    }
+
 }
 
 
@@ -702,7 +722,16 @@ a {
 
         }
     }
+    .principalCarrito {
+        font-size: 8px;
+        height: 80vh;
+        .box{
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: column;
 
+        }
+    }
     .principalContactos {
         font-size: 8px;
 
@@ -755,4 +784,21 @@ a {
         }
 
     }
+}
+.d-none{
+    display: none;
+}
+.colorMensajeError{
+    background-color: rgba(255, 255, 255, 0.651);
+    color: red;
+
+}
+
+.tachito {
+    color: black;
+    font-size: 15px;
+}
+.botonEliminar{
+    color: none;
+    cursor: pointer;
 }

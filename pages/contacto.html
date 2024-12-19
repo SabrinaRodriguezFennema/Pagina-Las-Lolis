@@ -49,26 +49,35 @@
             </div>
 
             <div class="boxContacto">
-                <form class="principalFormulario">
+                <form class="principalFormulario" id="miFormulario">
                     <div class="box">
                         <label for="nombre"> Nombre</label>
-                        <input type="text" required name="nombre" id="nombre" class="items">
+                        <input type="text" id="nombre" class="items">
+                        <small class="d-none colorMensajeError" id="errorNombre">El nombre es obligatorio.</small>
+                        <small class="d-none colorMensajeError" id="errorNombreCaracteres">Ingrese un nombre valido.</small>
+                        
+                        
                     </div>
                     <div class="box">
                         <label for="email"> Email</label>
-                        <input type="email"  required name="email" id="email" class="items">
+                        <input type="email" id="email" class="items">
+                        <small class="d-none colorMensajeError" id="errorEmail">El email es obligatorio.</small>
+                        <small class="d-none colorMensajeError" id="errorEmailCaracteres">Ingrese un email valido.</small>
                     </div>
                     <div class="box">
                         <label for="numero"> Telefono</label>
-                        <input type="number"  required name="telefono" id="telefono" class="items">
+                        <input type="text" id="telefono" class="items">
+                        <small class="d-none colorMensajeError" id="errorTelefono">El telefono es obligatorio.</small>
+                        <small class="d-none colorMensajeError" id="errorTelefonoCaracteres">Ingrese un numero valido.</small>
                     </div>
                     <div class="box">
                         <label for="mensaje"> Ingrese su mensaje</label>
-                        <textarea name="mensaje" id="Mensaje"  class="itemMensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje"  class="itemMensaje"></textarea>
+                        <small class="d-none colorMensajeError" id="errorMensaje">El mensaje debe contener al menos 10 caractares.</small>
                         
                     </div>
                     <div>
-                        <input type="button" value="Enviar" class="boton">
+                        <input type="submit" value="Enviar" class="boton">
                     </div>
                 </form>
             </div>
@@ -77,7 +86,9 @@
 
 
         </div>
-        <a href="./contacto.html"> <i class="fa-solid fa-arrow-up"></i> </a>
+        <div class="flecha">
+            <i class="fa-solid fa-angles-up d-none" id="botonSubir"></i>
+        </div>
         
     </main>
     <footer class="footer">
@@ -111,7 +122,7 @@
             <div class="item">
                 <div class="subitem">
                     <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
-                    <form action="" class="suscribite">
+                    <form action="" class="suscribite" id="formSuscribite">
                         <input type="email" placeholder="Ingresa tu correo electrónico" id="emailSusc" name="emailSusc" class="box">
                         <input type="submit" value="Suscribirse" class="boton">
                     </form>
@@ -140,6 +151,9 @@
         </div>
         <p class="derechosReservados">2024 LasLolis | Todos los derechos reservados </p>
     </footer>
+    <script src="../js/validacion.js"> </script>
+    <script src="../js/botonarriba.js"></script>
+    <script src="../js/validacionmailsuscribir.js"></script>
 </body>
 
 </html>

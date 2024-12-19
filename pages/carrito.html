@@ -25,12 +25,31 @@
                 <li class="listaItem"><a href="./servicios.html">SERVICIO</a></li>
                 <li class="listaItem"><a href="./capacitacion.html">CAPACITACIÓN</a></li>
                 <li class="listaItem"><a href="./contacto.html">CONTACTO</a></li>
-                <li class="listaItem"><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="listaItem"><a href="./carrito.html"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="principalCarrito">
         <h1>CARRITO</h1>
+        <div class="box">
+            <table class="tablaProductos">
+                <thead>
+                    <tr class="trtitulo">
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCarrito"> 
+
+                </tbody>
+            </table>
+            <div class="total">
+                <h3>Total:  </h3> <h3>$<span id="totalCarrito">0.00</span></h3> 
+            </div>
+        </div>
+        <div class="flecha">
+            <i class="fa-solid fa-angles-up d-none" id="botonSubir"></i>
+        </div>
     </main>
     <footer class="footer">
         <div class="contenedorFooter">
@@ -63,7 +82,7 @@
             <div class="item">
                 <div class="subitem">
                     <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
-                    <form action="" class="suscribite">
+                    <form action="" class="suscribite" id="formSuscribite">
                         <input type="email" placeholder="Ingresa tu correo electrónico" id="emailSusc" name="emailSusc" class="box">
                         <input type="submit" value="Suscribirse" class="boton">
                     </form>
@@ -92,6 +111,10 @@
         </div>
         <p class="derechosReservados">2024 LasLolis | Todos los derechos reservados </p>
     </footer>
+    <script src="../js/mostrarcarrito.js"></script>
+    <script src="../js/botonarriba.js"></script>
+    <script src="../js/validacionmailsuscribir.js"></script>
+
 </body>
 
 </html>
