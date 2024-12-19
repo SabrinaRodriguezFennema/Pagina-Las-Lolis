@@ -58,8 +58,8 @@ a {
     align-items: start;
 
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
     .navHeader {
@@ -75,7 +75,7 @@ a {
     }
 }
 .fa-angles-up{
-    font-size: 1.5em;
+    font-size: 25px;
     color: rgba(0, 0, 0, 0.836);
     position: fixed;
     bottom: 20px;
@@ -308,11 +308,9 @@ a {
 /*Estilos Capacitacion*/
 .principalCapacitacion {
 
-    font-size: 10px;
-
     .tituloCapacitacion {
         margin-left: 10px;
-        font-size: 3em;
+        font-size: 1.8em;
         padding-top: 20px;
         text-align: center;
     }
@@ -331,7 +329,7 @@ a {
             text-align: center;
             width: 350px;
             height: 350px;
-
+            font-size: 10px;
             h3,
             h4 {
                 margin-top: 10px;
@@ -353,6 +351,7 @@ a {
         }
 
         .contenedorTextoPrincipal {
+            font-size: 10px;
             width: 350px;
             height: 350px;
             padding: 10px;
@@ -378,7 +377,7 @@ a {
 
 .principalServicios {
     text-align: center;
-
+    margin-top: 30px;
     .contenedorServicios {
         padding: 20px;
         margin: 0 auto;
@@ -660,7 +659,7 @@ a {
                 width: 250px;
                 height: 220px;
                 margin-bottom: 10px;
-
+                font-size: 6px;
                 .lista {
                     width: 100%;
                 }
@@ -670,7 +669,6 @@ a {
                 padding: 5px;
                 width: 250px;
                 height: 250px;
-
                 img {
                     width: 150px;
                     height: 150px;
@@ -678,7 +676,7 @@ a {
 
                 h3,
                 h4 {
-                    font-size: 2em;
+                    font-size: 15px;
                 }
             }
         }
